@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Tareas</title>
+</head>
+<body>
+<h1>Lista de Tareas</h1>
+<button id="btn-nueva">Nueva Tarea</button>
+<div id="lista-tareas">
+    <div class="tarea-item" th:each="tarea : ${tareas}"
+         th:text="${tarea.titulo}">
+    </div>
+</div>
+</body>
+</html>
